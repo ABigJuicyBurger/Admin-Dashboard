@@ -4,6 +4,11 @@
 }
 
 .container {
+  width: 100%;
+  max-width: 57vw;
+  max-height: 100vw;
+  overflow-y: auto;
+  margin: 0 auto;
   display: grid;
   grid-template-rows: 1fr 4fr;
   grid-template-columns: 1fr 4fr;
