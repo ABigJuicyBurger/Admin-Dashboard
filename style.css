@@ -47,6 +47,30 @@
   padding: 20px;
 }
 
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: rgb(216, 214, 214);
+  margin-bottom: 4vh;
+}
+
+.firstHalf {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background-color: rgb(216, 214, 214);
+  margin-bottom: 4vh;
+  row-gap: 10px;
+}
+
+.secondHalf {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background-color: rgb(216, 214, 214);
+  margin-bottom: 4vh;
+  row-gap: 10px;
+}
+
 .mainContent {
   background-color: rgb(216, 214, 214);
 
