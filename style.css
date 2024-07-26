@@ -114,6 +114,10 @@
   width: 80%;
 }
 
+.logo {
+  width: 17px;
+}
+
 .card,
 .profile {
   border: 1px solid white;
