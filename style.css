@@ -112,6 +112,18 @@ input {
   row-gap: 10px;
 }
 
+.firstHalf a,
+.secondHalf a {
+  text-decoration: none;
+  color: black;
+}
+
+.firstHalf a:hover,
+.secondHalf a:hover {
+  color: lightgray;
+  text-decoration: underline;
+}
+
 .secondHalf {
   display: grid;
   grid-template-columns: 1fr 5fr;
