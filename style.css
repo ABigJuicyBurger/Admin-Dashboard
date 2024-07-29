@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Baskerville, Times New ROman, serif";
+  --card-color: white;
 }
 
 .container {
@@ -180,7 +181,6 @@ input {
 }
 
 .trending {
-  border: 1px solid red;
   display: grid;
   padding-top: 10px;
   gap: 20px;
@@ -194,13 +194,14 @@ input {
   width: 21px;
 }
 
-.card {
+.card,
+.trendingInner {
   display: grid;
-  padding: 20px;
   grid-template: autofill, minmax(3, 1fr);
-  gap: 1px;
   background-color: white;
   border-radius: 1em;
+  padding: 10px;
+
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -218,8 +219,7 @@ input {
   grid-column: 1 / 3;
 }
 
-.card,
+/* .card,
 .profile {
-  border: 1px solid white;
   padding: 10px;
-}
+} */
