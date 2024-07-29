@@ -43,8 +43,14 @@
   border: 1px solid black;
 }
 
-button {
+button,
+.searchButton {
   width: 50%;
+  cursor: pointer;
+}
+
+searchButton {
+  cursor: pointer;
 }
 
 .leftSideBar {
@@ -107,9 +113,6 @@ button {
   border: 1px solid green;
 }
 
-.trending {
-}
-
 .rightSideBar {
   background-color: rgb(216, 214, 214);
   grid-row: 1 / 4;
@@ -117,6 +120,20 @@ button {
   display: grid;
   padding: 20px;
   width: 80%;
+  grid-template-rows: 1fr 1fr;
+  gap: 10%;
+}
+
+.announcements {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+}
+
+.trending {
+  border: 1px solid red;
+  display: grid;
+  padding-top: 10px;
 }
 
 .companylogo {
@@ -135,18 +152,4 @@ button {
 .card,
 .profile {
   border: 1px solid white;
-}
-
-.announcements {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  gap: 20px;
-}
-
-.trending {
-  border: 1px solid white;
-  display: grid;
-  grid-template-rows: auto 1fr;
-  gap: 20px;
-  padding-top: 10px;
 }
