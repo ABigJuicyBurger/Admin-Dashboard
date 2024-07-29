@@ -16,7 +16,7 @@
         <button class="searchButton" type="submit">
           <i class="fa fa-search"></i>
         </button>
-        <input type="text" placeholder="Search.." />
+        <input type="text" placeholder />
       </div>
       <div class="identity">
         <p>Alert Sign</p>
@@ -37,7 +37,10 @@
     <div class="leftSideBar">
       <div class="dashboard">
         <img class="companylogo" src="icons/hacker.gif" />
-        <p style="align-self: center">Dashboard</p>
+        <section class="wrapper">
+          <div class="dashboardTitle">Dashboard</div>
+          <div class="bottom" aria-hidden="true">Dashboard</div>
+        </section>
       </div>
       <div class="firstHalf">
         <img class="logo" src="icons/homeicon.png" />
@@ -120,9 +123,11 @@
         <div class="announcements">
           <h2 class="projects-title">Announcements</h2>
           <div class="card">
-            <p>Site Maintenance</p>
-            <p>Community Share Day</p>
-            <p>Updated Privacy Policy</p>
+            <div class="card-inner">
+              <p>Site Maintenance</p>
+              <p>Community Share Day</p>
+              <p>Updated Privacy Policy</p>
+            </div>
           </div>
         </div>
         <div class="trending">

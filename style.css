@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Baskerville, Times New ROman, serif";
 }
 
 .container {
@@ -23,7 +24,7 @@
 
 .searchBar {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 6fr;
   grid-row: 1 / 2;
 }
 
@@ -49,8 +50,15 @@ button,
   cursor: pointer;
 }
 
-searchButton {
+.searchButton {
   cursor: pointer;
+  border: none;
+}
+
+input {
+  border-radius: 1em;
+  background-color: lightgray;
+  border-style: none;
 }
 
 .leftSideBar {
@@ -64,8 +72,37 @@ searchButton {
 .dashboard {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   margin-bottom: 4vh;
+}
+
+.wrapper {
+  display: grid;
+  align-self: center;
+  font-size: 2em;
+  box-sizing: border-box;
+  color: black;
+  margin: 0;
+  background-color: lightblue;
+  font-weight: 700;
+}
+
+.wrapper > div {
+  grid-area: 1/1/-1/-1;
+}
+
+.dashboardTitle {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+}
+
+.bottom {
+  clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+  color: transparent;
+  background: -webkit-linear-gradient(177deg, black 53%, lightblue 68%);
+  background: linear-gradient(177deg, black 53%, lightblue 68%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transform: translateX(-0.02em);
 }
 
 .firstHalf {
@@ -134,6 +171,7 @@ searchButton {
   border: 1px solid red;
   display: grid;
   padding-top: 10px;
+  gap: 20px;
 }
 
 .companylogo {
@@ -146,10 +184,30 @@ searchButton {
 
 .card {
   display: grid;
-  padding: 13px;
+  padding: 20px;
+  grid-template: autofill, minmax(3, 1fr);
+  gap: 1px;
+  background-color: white;
+  border-radius: 1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-inner {
+  display: grid;
+  grid-template: 1fr;
+  gap: 1px;
+  background-color: #ccc;
+}
+
+.card p {
+  background-color: white;
+  padding: 10px;
+  margin: 0;
+  grid-column: 1 / 3;
 }
 
 .card,
 .profile {
   border: 1px solid white;
+  padding: 10px;
 }
