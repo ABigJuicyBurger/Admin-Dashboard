@@ -257,6 +257,28 @@ input {
   background-image: url("projectpics/project2.png");
 }
 
+.ocean-text {
+  background: linear-gradient(45deg, #0c3247, #9cb3be, #0077be);
+  background-size: 200% 200%;
+  color: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: ocean-wave 5s ease infinite;
+}
+
+@keyframes ocean-wave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .rightSideBar {
   background-color: rgb(216, 214, 214);
   grid-row: 1 / 4;
