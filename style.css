@@ -94,7 +94,7 @@ button,
 
 input {
   border-radius: 1em;
-  background-color: rgb(216, 214, 214);
+  background-color: #f0f8ff;
   border-style: none;
   padding: 5px;
 }
@@ -171,7 +171,7 @@ input {
 }
 
 .mainContent {
-  background-color: rgb(216, 214, 214);
+  background-color: f0f8ff;
 
   padding: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -187,7 +187,7 @@ input {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr 1fr 1fr;
   gap: 20px;
-  background-color: rgb(216, 214, 214);
+  background-color: #f0f8ff;
   margin-bottom: 4vh;
   padding: 20px;
 }
@@ -296,7 +296,7 @@ input {
 }
 
 .rightSideBar {
-  background-color: rgb(216, 214, 214);
+  background-color: #f0f8ff;
   grid-row: 1 / 4;
   margin-bottom: 4vh;
   display: grid;
