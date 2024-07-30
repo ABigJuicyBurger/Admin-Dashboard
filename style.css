@@ -257,6 +257,22 @@ input {
   background-image: url("projectpics/project2.png");
 }
 
+.project3::before {
+  background-image: url("projectpics/project3.png");
+}
+
+.project4::before {
+  background-image: url("projectpics/project4.png");
+}
+
+.project5::before {
+  background-image: url("projectpics/project5.png");
+}
+
+.project6::before {
+  background-image: url("projectpics/project6.png");
+}
+
 .ocean-text {
   background: linear-gradient(45deg, #0c3247, #9cb3be, #0077be);
   background-size: 200% 200%;
