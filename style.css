@@ -318,6 +318,26 @@ input {
   gap: 20px;
 }
 
+.profile {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.profileName {
+  font-weight: 800;
+}
+
+.profile-info {
+ 
+}
+
+.picture {
+  width: 50px;
+  object-fit: cover;
+  border-radius: 15%;
+}
+
 .companylogo {
   width: 70%;
 }
