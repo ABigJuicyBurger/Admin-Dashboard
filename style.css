@@ -350,6 +350,11 @@ img {
   width: 50px;
   object-fit: cover;
   border-radius: 15%;
+  cursor: pointer;
+}
+
+.picture:hover {
+  opacity: 0.7;
 }
 
 .companylogo {
