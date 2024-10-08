@@ -271,7 +271,8 @@ body.dark img {
   border-radius: 75%;
 }
 
-body.dark .logo {
+body.dark .logo,
+body.dark .bell {
   filter: brightness(1.5) invert(1);
 }
 
@@ -290,7 +291,7 @@ body.dark .logo {
 body.dark,
 body.dark .searchButton,
 body.dark .wrapper {
-  background-color: #0a0a0a;
+  background-color: #1a1a1a;
   color: var(--text-color);
 }
 
