@@ -1,0 +1,49 @@
+const page1 = document.getElementById("page1");
+const page2 = document.getElementById("page2");
+const prevButton = document.getElementById("prevPage");
+const nextButton = document.getElementById("nextPage");
+
+let currentPage = 1;
+
+function switchPage() {
+  if (currentPage === 1) {
+    page1.classList.add("slide-left");
+    page2.classList.remove("slide-right");
+    page2.style.display = "grid";
+    setTimeout(() => {
+      page1.style.display = "none";
+      page2.classList.remove("slide-left");
+    }, 500);
+    currentPage = 2;
+  } else {
+    page2.classList.add("slide-right");
+    page1.classList.remove("slide-left");
+    page1.style.display = "grid";
+    setTimeout(() => {
+      page2.style.display = "none";
+      page1.classList.remove("slide-right");
+    }, 500);
+    currentPage = 1;
+  }
+}
+
+nextButton.addEventListener("click", switchPage);
+prevButton.addEventListener("click", switchPage);
+
+const darkButton = document.getElementById("dark");
+const regularButton = document.createElement("regularButton");
+const body = document.body;
+
+darkButton.addEventListener("click", () => {
+  body.classList.add("dark");
+  darkButton.style.display = "none";
+  // regularButton.textContent = "Regular Mode";
+  // regularButton.style.display = "block";
+  // body.appendChild(regularButton);
+});
+
+// regularButton.addEventListener("click", () => {
+//   body.classList.remove("dark-mode");
+//   darkButton.style.display = "block";
+//   regularButton.style.display = "none";
+// });
