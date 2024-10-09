@@ -31,19 +31,17 @@ nextButton.addEventListener("click", switchPage);
 prevButton.addEventListener("click", switchPage);
 
 const darkButton = document.getElementById("dark");
-const regularButton = document.createElement("regularButton");
-const body = document.body;
+const nightLogo = document.getElementById("nightLogo");
 
 darkButton.addEventListener("click", () => {
-  body.classList.add("dark");
-  darkButton.style.display = "none";
-  // regularButton.textContent = "Regular Mode";
-  // regularButton.style.display = "block";
-  // body.appendChild(regularButton);
-});
+  document.body.classList.toggle("dark");
 
-// regularButton.addEventListener("click", () => {
-//   body.classList.remove("dark-mode");
-//   darkButton.style.display = "block";
-//   regularButton.style.display = "none";
-// });
+  if (document.body.classList.contains("dark")) {
+    darkButton.textContent = "Light Mode";
+    nightLogo.src = "icons/sunrise.gif";
+    nightLogo.style.mixBlendMode = "lighten";
+  } else {
+    darkButton.textContent = "Dark Mode";
+    nightLogo.src = "icons/night.gif";
+  }
+});
