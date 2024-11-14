@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/34d2b61520.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body class="container">
+    <div class="header">
+      <div class="searchBar">
+        <button class="searchButton" type="submit">
+          <i class="fa fa-search"></i>
+        </button>
+        <input type="text" placeholder />
+      </div>
+      <div class="identity">
+        <img class="bell" src="icons/bell.png" />
+        <img src="projectpics/profilepic.png" class="picture" />
+        <p>Bader Muhssin</p>
+      </div>
+      <div class="welcome">
+        <img src="projectpics/profilepic.png" class="picture" />
+        <p>Hi, there, <br /><br />Bader Muhssin (@BaddieMuh)</p>
+      </div>
+      <div class="buttons">
+        <button class="new">New</button>
+        <button class="upload">Upload</button>
+        <button class="share">Share</button>
+      </div>
+    </div>
+
+    <div class="leftSideBar">
+      <div class="dashboard">
+        <img class="companylogo" src="icons/hacker.gif" />
+        <section class="wrapper">
+          <div class="dashboardTitle">Dashboard</div>
+          <div class="bottom" aria-hidden="true">Dashboard</div>
+        </section>
+      </div>
+      <div class="firstHalf">
+        <img class="logo" src="icons/homeicon.png" />
+        <a href="https://abigjuicyburger.github.io/Admin-Dashboard">Home</a>
+        <img class="logo" src="icons/githublogo.svg" />
+        <a href="https://github.com/ABigJuicyBurger">
+          <span class="ocean-text"> Creator Profile</span>
+        </a>
+        <img class="logo" src="icons/messageicon.png" />
+        <a href="#">Messages</a>
+        <img class="logo" src="icons/historyicon.png" />
+        <a href="#">History</a>
+        <img class="logo" src="icons/homeworkicon.png" />
+        <a href="#">Tasks</a>
+        <img class="logo" src="icons/communityicon.png" />
+        <a href="#">Community</a>
+      </div>
+      <div class="secondHalf">
+        <img class="logo" src="icons/settingsicon.png" />
+        <a href="#">Settings</a>
+        <img class="logo" src="icons/supporticon.png" />
+        <a href="#">Support</a>
+        <img class="logo" src="icons/privacyicon.png" />
+        <a href="#">Privacy</a>
+        <img id="nightLogo" class="logo" src="icons/night.gif" />
+        <a id="dark" class="ocean-text" href="#">Dark Mode</a>
+      </div>
+    </div>
+
+    <div class="mainContent">
+      <div class="projects">
+        <h2 class="projects-title">Your projects</h2>
+
+        <section class="project-page" id="page1">
+          <div class="project project1">
+            <a href="https://abigjuicyburger.github.io/odin-recipes/">
+              <p class="title">Odin Recipes</p>
+              <p>
+                My very first project in the world of web development...ah the
+                good old days of using HTML and CSS, so much I can.....blah blah
+                blah......
+              </p>
+            </a>
+          </div>
+
+          <div class="project project2">
+            <a href="https://abigjuicyburger.github.io/landing-page/">
+              <p class="title">Landing Page</p>
+              <p>
+                My first stressful project playing around with Flexbox...until
+                my mentor came and showed me something magical....called Chrome
+                DevTools.....
+              </p>
+            </a>
+          </div>
+
+          <div class="project project3">
+            <a href="https://abigjuicyburger.github.io/RockPaperScissors/">
+              <p class="title">Rock Paper Scissors</p>
+              <p>
+                Definitely an easier game to code...I still come back to this to
+                keep up on understanding pseudocode and basic
+                functions...simpler times..
+              </p>
+            </a>
+          </div>
+
+          <div class="project project4">
+            <a href="https://abigjuicyburger.github.io/Calculator/">
+              <p class="title">Calculator</p>
+              <p>
+                One of the 3 projects that I've done so far (as of July 30 2024)
+                that focuses on more Javascript than HTML or CSS so I'm happy I
+                managed to figure out how to makea calculator....it was not easy
+                and i did sommetimes look for answers though...
+              </p>
+            </a>
+          </div>
+
+          <div class="project project5">
+            <a href="https://abigjuicyburger.github.io/Santhiago/">
+              <p class="title">Birthday Card</p>
+              <p>
+                Actually did something outside of school! Did this for a friend
+                as I was too broke to buy a nice gift for him but this cheered
+                him up so success!
+              </p>
+            </a>
+          </div>
+
+          <div class="project project6">
+            <a href="https://abigjuicyburger.github.io/Sign-up-Form/">
+              <p class="title">Sign up Form</p>
+              <p>
+                The latest and most fun project so far, aside from the fact that
+                playing with screen widths can be annoying...maybe I'm still too
+                green and new to this...
+              </p>
+            </a>
+          </div>
+        </section>
+
+        <div class="pagination">
+          <button id="prevPage">Previous</button>
+          <button id="nextPage">Next</button>
+        </div>
+
+        <section class="project-page" id="page2" style="display: none">
+          <div class="project project7">
+            <a href="https://abigjuicyburger.github.io/Library">
+              <p class="title">Library</p>
+              <p>
+                Latest project! Getting back into more complicated JS skills,
+                the latest being object constructors and more DOM manipulation.
+              </p>
+            </a>
+          </div>
+          <div class="project project8">
+            <a href="https://abigjuicyburger.github.io/TicTacToe">
+              <p class="title">Tic Tac Toe</p>
+              <p>Using Classes now! The Cowboy theme got out of hand though.</p>
+            </a>
+          </div>
+          <div class="project project9">
+            <a href="https://abigjuicyburger.github.io/RestaurantPage">
+              <p class="title">Restaurant Page</p>
+              <p>
+                Latest project! Learning npm, webpack, and more DOM
+                manipulation. Too much DOM manipulation...
+              </p>
+            </a>
+          </div>
+          <div class="project project10">
+            <a href="https://regal-bonbon-6f37ad.netlify.app/">
+              <p class="title">CV-Application</p>
+              <p>
+                First React Application! Definitely struggled with separating
+                states and props. It works so I'm not complaining.
+              </p>
+            </a>
+          </div>
+          <div class="project project11">
+            <a href="https://todo-list-nu-lemon.vercel.app/">
+              <p class="title">Todo List</p>
+              <p>
+                Second React Application! Definitely improving my component
+                making skills with React now and kept this app looking simple.
+              </p>
+            </a>
+          </div>
+          <div class="project project12">
+            <a href="https://weather-app-coral-mu.vercel.app/">
+              <p class="title">Weather App</p>
+              <p>
+                Third React Application! Had fun connecting an API to display
+                weather and I had fun styling around and making the weather data
+                look glassy...
+              </p>
+            </a>
+          </div>
+        </section>
+      </div>
+      <div class="rightSideBar">
+        <div class="announcements">
+          <h2 class="projects-title">Announcements</h2>
+          <div class="card">
+            <div class="card-inner">
+              <p>Site Maintenance</p>
+              <p>Community Share Day</p>
+              <p>
+                Updated Privacy Policy <br /><br />
+                <a
+                  href="
+                https://youtu.be/dQw4w9WgXcQ"
+                  >Read More</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="trending">
+          <h2 class="projects-title">Trending</h2>
+          <div class="trendingInner">
+            <div class="profile">
+              <image src="projectpics/trumpy.jpg" class="picture"></image>
+              <div class="profile-info">
+                <p class="profileName">Trump</p>
+                <p>
+                  I will be the greatest jobs president that God ever created.
+                </p>
+              </div>
+            </div>
+            <div class="profile">
+              <image src="projectpics/biden.jpeg" class="picture"></image>
+              <div class="profile-info">
+                <p class="profileName">Biden</p>
+                <p>I shouldn't have been such a wise guy</p>
+              </div>
+            </div>
+            <div class="profile">
+              <image src="projectpics/obamna.jpeg" class="picture"></image>
+              <div class="profile-info">
+                <p class="profileName">Obamna</p>
+                <p>
+                  I need you to call up cousin Pookie and say, 'Pookie, it's
+                  time to vote'.
+                </p>
+              </div>
+            </div>
+            <div class="profile">
+              <image src="projectpics/kamala.jpeg" class="picture"></image>
+              <div class="profile-info">
+                <p class="profileName">Harris</p>
+                <p>"Do not come. Do not come"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
