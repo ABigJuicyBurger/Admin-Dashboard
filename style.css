@@ -520,6 +520,14 @@ body.dark .projects {
   background-image: url("projectpics/project12.png");
 }
 
+.project13::before {
+  background-image: url("projectpics/project13.png");
+}
+
+.project14::before {
+  background-image: url("projectpics/project14.png");
+}
+
 .ocean-text {
   background: linear-gradient(45deg, #0c3247, #9cb3be, #0077be);
   background-size: 200% 200%;
