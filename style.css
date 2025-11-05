@@ -342,8 +342,8 @@ body.dark .projects {
 }
 
 .mainContent {
+  width: 100vw;
   background-color: var(--bg-color);
-  padding: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -679,7 +679,6 @@ img {
   .mainContent {
     grid-column: 1;
     grid-row: 3;
-    padding: 10px;
   }
 
   .projects {
@@ -706,6 +705,10 @@ img {
     /* underline them */
     text-decoration: underline;
     text-decoration-color: lemonchiffon;
+  }
+
+  .pagination {
+    padding: 20px;
   }
 
   .rightSideBar {
