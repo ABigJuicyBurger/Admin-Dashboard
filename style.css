@@ -4,10 +4,10 @@
   --text-color: black;
   --card-color: white;
   --header-bg: white;
-  --sidebar-bg: lightblue;
+  --sidebar-bg: lemonchiffon;
   --button-bg: lightblue;
-  --button-hover: coral;
-  --project-border: coral;
+  --button-hover: lemonchiffon;
+  --project-border: lemonchiffon;
   --shadow-color: rgba(0, 0, 0, 0.1);
 
   /* Dark mode */
@@ -214,7 +214,7 @@ input {
   box-sizing: border-box;
   color: black;
   margin: 0;
-  background-color: lightblue;
+  background-color: lemonchiffon;
   font-weight: 700;
   margin-left: 10%;
 }
@@ -231,7 +231,7 @@ input {
 .bottom {
   clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
   color: transparent;
-  background: -webkit-linear-gradient(177deg, black 53%, lightblue 68%);
+  background: -webkit-linear-gradient(177deg, black 53%, lemonchiffon 68%);
   background: linear-gradient(177deg, black 53%, lightblue 68%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -379,7 +379,7 @@ body.dark .projects {
   border-radius: 1em;
   padding: 20px 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-left: 8px solid coral;
+  border-left: 8px solid lemonchiffon;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -434,7 +434,7 @@ body.dark .projects {
 }
 
 .pagination button:hover {
-  background-color: coral;
+  background-color: lemonchiffon;
 }
 
 .project a {
@@ -705,7 +705,7 @@ img {
   .project .title {
     /* underline them */
     text-decoration: underline;
-    text-decoration-color: coral;
+    text-decoration-color: lemonchiffon;
   }
 
   .rightSideBar {
