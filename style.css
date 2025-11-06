@@ -276,11 +276,14 @@ body.dark .bell {
   filter: brightness(1.5) invert(1);
 }
 
+#nightLogo {
+  mix-blend-mode: multiply;
+}
+
 .firstHalf > .logo:hover,
 .secondHalf > .logo:hover,
 .firstHalf > .logo + a:hover,
-.secondHalf > .logo + a:hover,
-#nightLogo + a:hover {
+.secondHalf > .logo + a:hover {
   text-decoration: underline;
   filter: brightness(0) invert(1);
 }

@@ -47,3 +47,9 @@ darkButton.addEventListener("click", () => {
     nightLogo.style.mixBlendMode = "multiply";
   }
 });
+
+const newButton = document.getElementsByClassName("new")[0];
+console.log(newButton);
+newButton.addEventListener("click", () => console.log("New button clicked!"));
+
+console.log("JS file successfuly loaded");
