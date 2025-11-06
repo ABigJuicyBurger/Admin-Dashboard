@@ -6,6 +6,7 @@ const nextButton = document.getElementById("nextPage");
 let currentPage = 1;
 
 function switchPage() {
+  // class manipulation
   if (currentPage === 1) {
     page1.classList.add("slide-left");
     page2.classList.remove("slide-right");
@@ -43,5 +44,6 @@ darkButton.addEventListener("click", () => {
   } else {
     darkButton.textContent = "Dark Mode";
     nightLogo.src = "icons/night.gif";
+    nightLogo.style.mixBlendMode = "multiply";
   }
 });

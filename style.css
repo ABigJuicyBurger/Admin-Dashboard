@@ -20,6 +20,7 @@
   --dark-button-hover: #3d3d3d;
   --dark-project-border: #3d3d3d;
   --dark-shadow-color: rgba(255, 255, 255, 0.05);
+  box-sizing: border-box;
 }
 * {
   margin: 0;
@@ -275,14 +276,11 @@ body.dark .bell {
   filter: brightness(1.5) invert(1);
 }
 
-#nightLogo {
-  mix-blend-mode: multiply;
-}
-
 .firstHalf > .logo:hover,
 .secondHalf > .logo:hover,
 .firstHalf > .logo + a:hover,
-.secondHalf > .logo + a:hover {
+.secondHalf > .logo + a:hover,
+#nightLogo + a:hover {
   text-decoration: underline;
   filter: brightness(0) invert(1);
 }
