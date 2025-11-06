@@ -50,6 +50,15 @@ darkButton.addEventListener("click", () => {
 
 const newButton = document.getElementsByClassName("new")[0];
 console.log(newButton);
-newButton.addEventListener("click", () => console.log("New button clicked!"));
+
+function addNewProject() {
+  // show pop up of a new form
+  newButton.addEventListener("click", () => console.log("New button clicked!"));
+  const form = document.createElement("div");
+  const formContent = form.textContent("Upload a file");
+  form.appendChild(formContent);
+}
+
+newButton.addEventListener("click", addNewProject);
 
 console.log("JS file successfuly loaded");
